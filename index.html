@@ -12,6 +12,7 @@
   <div id="hud" class="hidden">
     <div class="stat"><span>距离</span><b id="distance">0m</b></div>
     <div class="stat cans"><span>小鱼干</span><b id="cans">0</b></div>
+    <div class="stat life"><span>生命</span><b id="lives">♥♥♥</b></div>
     <div class="stat"><span>纪录</span><b id="best">0</b></div>
     <button id="musicBtn" class="icon-btn" aria-label="音乐开关">♫</button><button id="pauseBtn" class="icon-btn" aria-label="暂停">Ⅱ</button>
   </div>
@@ -34,7 +35,7 @@
         <div><b>电脑</b><span>WASD / 方向键移动</span></div>
         <div><b>手机</b><span>按住屏幕拖动猫猫</span></div>
         <div><b>目标</b><span>躲陨石 · 吃小鱼干 · 闯弹幕</span></div>
-        <div><b>护盾</b><span>冲刺撞碎陨石，每 2 分钟挑战 Boss</span></div>
+        <div><b>护盾</b><span>空格冲刺 · E 键吞噬 · 每 2 分钟 Boss</span></div>
       </div>
       <button id="playBtn" class="primary">我准备好了</button>
     </div>
@@ -48,6 +49,7 @@
   <button id="devourBtn" class="ultimate hidden" aria-label="宇宙吞噬"><span>😺</span><small>吞噬</small></button>
   <button id="dashBtn" class="dash hidden" aria-label="冲击护盾"><span>◉</span><small>护盾冲刺</small></button>
   <div id="toast" class="toast hidden"></div>
+  <audio id="bgm" src="space-cat-bgm.mp3" preload="auto" loop></audio>
   <script src="game.js"></script>
 </body>
 </html>
