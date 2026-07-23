@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
   <meta name="theme-color" content="#07051d" />
-  <title>太空猫罐头大逃亡</title>
+  <title>太空猫小鱼干大逃亡</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="game" aria-label="太空猫罐头大逃亡游戏画面"></canvas>
+  <canvas id="game" aria-label="太空猫小鱼干大逃亡游戏画面"></canvas>
   <div id="hud" class="hidden">
     <div class="stat"><span>距离</span><b id="distance">0m</b></div>
-    <div class="stat cans"><span>罐头</span><b id="cans">0</b></div>
+    <div class="stat cans"><span>小鱼干</span><b id="cans">0</b></div>
     <div class="stat"><span>纪录</span><b id="best">0</b></div>
     <button id="musicBtn" class="icon-btn" aria-label="音乐开关">♫</button><button id="pauseBtn" class="icon-btn" aria-label="暂停">Ⅱ</button>
   </div>
   <section id="titleScreen" class="screen">
     <div class="panel hero-panel">
       <div class="pixel-kicker">✦ NEON CAT FLIGHT ✦</div>
-      <h1>太空猫<br><em>罐头大逃亡</em></h1>
-      <p>驾驶猫猫飞船穿越霓虹星轨，闪开陨石，能吃多少罐头就吃多少！</p>
+      <h1>太空猫<br><em>小鱼干大逃亡</em></h1>
+      <p>穿越霓虹星轨，撞碎陨石，收集里面藏着的小鱼干！</p>
       <img class="pixel-cat-art" src="pixel-cat.png" alt="灰色像素太空猫拖着彩虹飞行" />
       <button id="startBtn" class="primary">开始逃亡</button>
       <button id="howBtn" class="secondary">怎么玩</button>
@@ -33,8 +33,8 @@
       <div class="instructions">
         <div><b>电脑</b><span>WASD / 方向键移动</span></div>
         <div><b>手机</b><span>按住屏幕拖动猫猫</span></div>
-        <div><b>目标</b><span>躲陨石 · 吃罐头 · 刷纪录</span></div>
-        <div><b>冲刺</b><span>空格键 / 点击闪电按钮</span></div>
+        <div><b>目标</b><span>躲陨石 · 吃小鱼干 · 闯弹幕</span></div>
+        <div><b>护盾</b><span>冲刺撞碎陨石，每 2 分钟挑战 Boss</span></div>
       </div>
       <button id="playBtn" class="primary">我准备好了</button>
     </div>
@@ -43,9 +43,10 @@
     <div class="panel small"><h2>暂停啦</h2><p>猫猫正在宇宙里打盹。</p><button id="resumeBtn" class="primary">继续飞</button><button id="quitBtn" class="secondary">返回标题</button></div>
   </section>
   <section id="resultScreen" class="screen hidden">
-    <div class="panel"><div class="pixel-kicker">本次航行报告</div><h2 id="resultTitle">猫猫撞晕啦！</h2><div class="score-card"><span>总分</span><strong id="finalScore">0</strong><small id="newBest"></small></div><div class="result-row"><span>飞行距离 <b id="finalDistance">0m</b></span><span>罐头 <b id="finalCans">0</b></span></div><button id="restartBtn" class="primary">再飞一次</button><button id="homeBtn" class="secondary">返回标题</button></div>
+    <div class="panel"><div class="pixel-kicker">本次航行报告</div><h2 id="resultTitle">猫猫撞晕啦！</h2><div class="score-card"><span>总分</span><strong id="finalScore">0</strong><small id="newBest"></small></div><div class="result-row"><span>飞行距离 <b id="finalDistance">0m</b></span><span>小鱼干 <b id="finalCans">0</b></span></div><button id="restartBtn" class="primary">再飞一次</button><button id="homeBtn" class="secondary">返回标题</button></div>
   </section>
-  <button id="dashBtn" class="dash hidden" aria-label="霓虹冲刺"><span>⚡</span><small>冲刺</small></button>
+  <button id="devourBtn" class="ultimate hidden" aria-label="宇宙吞噬"><span>😺</span><small>吞噬</small></button>
+  <button id="dashBtn" class="dash hidden" aria-label="冲击护盾"><span>◉</span><small>护盾冲刺</small></button>
   <div id="toast" class="toast hidden"></div>
   <script src="game.js"></script>
 </body>
