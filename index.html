@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="app">
   <canvas id="game" aria-label="太空猫小鱼干大逃亡游戏画面"></canvas>
   <div id="hud" class="hidden">
     <div class="stat"><span>距离</span><b id="distance">0m</b></div>
@@ -51,6 +52,7 @@
   <div id="joystick" class="joystick hidden" aria-label="移动摇杆"><div id="joystickKnob"></div></div>
   <div id="toast" class="toast hidden"></div>
   <section id="rotateScreen" aria-label="请横屏游玩"><div><span>↻</span><h2>请旋转手机</h2><p>本游戏需要横屏游玩</p></div></section>
+  </div>
   <audio id="bgm" src="space-cat-bgm.mp3" preload="auto" loop></audio>
   <script src="game.js"></script>
 </body>
